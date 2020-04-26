@@ -1,0 +1,12 @@
+{
+  "name": "react-node-template",
+  "description": "A template for a react project with a node.js api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
