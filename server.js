@@ -1,12 +1,13 @@
 const path = require('path');
 const express = require('express');
-
+const bodyParser = require('body-parser');
 const app = express();
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'frontend/build')));
 
 // an api endpoint
+app.use(bodyParser.json());
 app.get('/api/helloworld', async (req, res) => {
     res.json("Hello, World!");
 });
